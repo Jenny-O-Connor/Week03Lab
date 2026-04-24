@@ -9,7 +9,7 @@ const empStore = {
   collection: 'employee',
 
 
-  getEmpInfo() {
+  getEmployees() {
     return this.store.findAll(this.collection);
   },
 

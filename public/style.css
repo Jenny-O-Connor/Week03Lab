@@ -13,3 +13,30 @@ html {
     background-color: lightgrey;
   }
   
+  .editSubmit {
+    border:none;
+    background: none;
+  }
+  
+  .hide{
+    display: none;
+}
+
+table {
+  margin:auto
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.name{
+  padding-top:22.5px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+  text-transform:capitalize;
+}

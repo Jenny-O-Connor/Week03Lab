@@ -1,72 +1,20 @@
 {
   "playlistCollection": [
     {
-      "id": "01",
-      "title": "Beethoven Sonatas",
-      "rating": 5, 
-      "songs": [
-        {
-          "id": "04",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "a05d60be-d161-4424-881b-9709a65a2f70",
-          "title": "werfg",
-          "artist": "wertgyh"
-        }
-      ]
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "id": "c7557858-bc55-4397-bc0d-5f2c583ce9f0",
+      "title": "Marge's Playlist",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-24T13:28:27.600Z"
     },
     {
-      "id": "02",
-      "title": "Beethoven Concertos",
-      "rating": 4, 
-      "songs": [
-        {
-          "id": "07",
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "08",
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
-        },
-        {
-          "id": "09",
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
-        }
-      ]
-    },
-    {
-      "id": "03",
-      "title": "Beethoven Unfinished Symphonies",
-      "rating": 3, 
-      "songs": []
-    },
-    {
-      "id": "16e71142-937a-4db9-8fca-fcdda69752d8",
-      "title": "Beethoven Works",
-      "rating": 3, 
-      "songs": []
-    },
-    {
-      "id": "ddd8bd4d-fe37-470f-866a-3402cfb09319",
-      "title": "beethoven symphonies",
-      "date": "2026-04-17T12:57:50.341Z",
-      "rating": 3, 
-      "songs": []
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "id": "a6c9a01b-a286-453f-92e5-f46858fc7e8a",
+      "title": "Beethoven",
+      "rating": 3,
+      "songs": [],
+      "date": "2026-04-24T13:31:31.255Z"
     }
   ]
 }
