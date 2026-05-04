@@ -1,20 +1,3 @@
 {
-  "playlistCollection": [
-    {
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "id": "c7557858-bc55-4397-bc0d-5f2c583ce9f0",
-      "title": "Marge's Playlist",
-      "rating": 3,
-      "songs": [],
-      "date": "2026-04-24T13:28:27.600Z"
-    },
-    {
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "id": "a6c9a01b-a286-453f-92e5-f46858fc7e8a",
-      "title": "Beethoven",
-      "rating": 3,
-      "songs": [],
-      "date": "2026-04-24T13:31:31.255Z"
-    }
-  ]
+  "playlistCollection": []
 }
