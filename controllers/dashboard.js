@@ -1,7 +1,7 @@
 'use strict';
 
 import logger from "../utils/logger.js";
-import playlistStore from "../models/playlist-store.js";
+import creatureStore from "../models/creature-store.js";
 import { v4 as uuidv4 } from 'uuid';
 import accounts from './accounts.js';
 
@@ -15,17 +15,17 @@ const dashboard = {
     if (loggedInUser) {
       const searchTerm = request.query.searchTerm || "";
 
-      const playlists = searchTerm
-        ? playlistStore.searchUserPlaylists(searchTerm, loggedInUser.id)
-        : playlistStore.getUserPlaylists(loggedInUser.id);
+      const creatures = searchTerm
+        ? creatureStore.searchUserCreatures(searchTerm, loggedInUser.id)
+        : creatureStore.getUserCreatures(loggedInUser.id);
 
       const sortField = request.query.sort;
       const order = request.query.order === "desc" ? -1 : 1;
 
-      let sorted = playlists;
+      let sorted = creatures;
 
       if (sortField) {
-        sorted = playlists.slice().sort((a, b) => {
+        sorted = creatures.slice().sort((a, b) => {
           if (sortField === "title") {
             return a.title.localeCompare(b.title) * order;
           }
@@ -39,9 +39,9 @@ const dashboard = {
       }
 
       const viewData = {
-        title: "Playlist App Dashboard",
+        title: "Creature App Dashboard",
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        playlists: sortField ? sorted : playlists,
+        creatures: sortField ? sorted : creatures,
         search: searchTerm,
         titleSelected: request.query.sort === "title",
         ratingSelected: request.query.sort === "rating",
@@ -49,7 +49,7 @@ const dashboard = {
         descSelected: request.query.order === "desc",
       };
       
-      logger.info('about to render' + viewData.playlists);
+      logger.info('about to render' + viewData.creatures);
       
       response.render('dashboard', viewData);
     }
@@ -58,11 +58,11 @@ const dashboard = {
   },
 
 
-   addPlaylist(request, response) {
+   addCreature(request, response) {
     const loggedInUser = accounts.getCurrentUser(request);
     const timestamp = new Date();
 	
-    const newPlaylist = {
+    const newCreature = {
       id: uuidv4(),
       userid: loggedInUser.id,
       title: request.body.title,
@@ -71,16 +71,16 @@ const dashboard = {
       date: timestamp
     };
 
-    playlistStore.addPlaylist(newPlaylist, request.files.picture, function() {
+    creatureStore.addCreature(newCreature, request.files.picture, function() {
         response.redirect("/dashboard");
     });
   },
 
 
-    deletePlaylist(request, response) {
-    const playlistId = request.params.id;
-    logger.debug(`Deleting Playlist ${playlistId}`);
-    playlistStore.removePlaylist(playlistId, function() {
+    deleteCreature(request, response) {
+    const creatureId = request.params.id;
+    logger.debug(`Deleting Creature ${creatureId}`);
+    creatureStore.removeCreature(creatureId, function() {
       response.redirect("/dashboard");
     });
   },

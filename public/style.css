@@ -10,9 +10,32 @@ html {
   body {
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     margin: 2em;
-    background-color: lightgrey;
+    background-color: #a3d9d6;
   }
-  
+
+  h1 {
+  color: #ff85d2; 
+}
+
+h2 {
+  color: #62aca7;
+  font-size: 20px;
+}
+
+header a {
+  color: #4ea39e;
+}
+
+.item {
+  color: #4ea39e;
+}
+
+p {
+  text-align: left;
+  margin-left: 20px;
+}
+
+
   .editSubmit {
     border:none;
     background: none;
@@ -39,4 +62,8 @@ table {
   line-height:20px;
   font-weight:bold;
   text-transform:capitalize;
+}
+
+.ui.form input {
+  background-color: #ffbdff;
 }

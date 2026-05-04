@@ -1,32 +1,36 @@
 {{> menu id="about"}}
 
-<section class="ui left aligned middle aligned segment">
+<section class="ui center aligned segment">
 
-  <h2>About the Playlist App</h2>
-  <p>
-    More information about the app
-  </p>
+  <h1>About the Sea Creature App</h1>
+  <h2>Here is some information about the app creator!</h2>
+
+<h2>The 'Know Your Sea Creatures' app is run by Carly Monroe who is a marine biologist at Waterford Marine Biology.</h2>
+
+  <hr>
+   <h2>Where Waterford Marine Biology is located.</h2>
+  <img src = "/map.jpg" class = "ui centered image">
 
 
 <div class="ui centered card">
   <div class="image">
-    <img src="{{emps.image}}">
+    <img src="{{owner.image}}">
   </div>
   <div class="content">
-    <a class="header">{{emps.fullname}}</a>
+    <a class="header">{{owner.fullname}}</a>
     <div class="meta">
-      <span class="date">Joined in {{emps.joined}}</span>
+      <span class="date">Created 'Know Your Sea Creatures in' {{owner.created}}</span>
     </div>
     <div class="description">
-      {{emps.name}} is an {{emps.job}} living in {{emps.city}}.
+      {{owner.name}} is a {{owner.job}} who recently moved to {{owner.city}} to persue her dream of being a Marine Biologist. She set up Know Your Sea Creatures to encourage kids to learn more about aquatic animals!.
+      Carly has been working hard to save marine life, look at how many animals she has saved!
     </div>
   </div>
   <div class="extra content">
     <a>
-      <i class="user icon"></i>
-      {{emps.mates}} contacts
+       <i class="pink heart icon"></i>
+      {{owner.animals}} Animals saved!
     </a>
   </div>
 </div>
-
 </section>

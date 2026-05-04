@@ -1,6 +1,6 @@
 'use strict';
 import logger from "../utils/logger.js";
-import empStore from "../models/emp-store.js";
+import ownerStore from "../models/owner-store.js";
 import accounts from './accounts.js';
 
 const about = {
@@ -10,9 +10,9 @@ const about = {
     
     if (loggedInUser) {
       const viewData = {
-        title: 'About the Playlist App',
+        title: 'About the Sea Creature App',
         fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
-        emps: empStore.getEmployees(),
+        owner: ownerStore.getOwner(),
       };
       response.render('about', viewData);
     }

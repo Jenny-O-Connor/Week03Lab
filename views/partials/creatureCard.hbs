@@ -5,11 +5,11 @@
         <div class="content">
           <a class="header">{{uppercase title}}</a> 
           <p>
-            <i class="music icon"></i>
+            <i class="anchor icon"></i>
             {{#if songs}}
-              Total songs: {{songs.length}}
+              Total facts: {{songs.length}}
             {{else}}
-              Empty playlist!
+              No facts yet!
             {{/if}}
 
             {{#if date}}
@@ -35,10 +35,10 @@
         </div>
         
         <div class="extra content">
-          <a href="/playlist/{{id}}" >
+          <a href="/creature/{{id}}" >
             <i class="ui open folder outline black icon"></i>
           </a>
-          <a href="/dashboard/deleteplaylist/{{id}}" >
+          <a href="/dashboard/deletecreature/{{id}}" >
             <i class="ui black trash icon"></i>
           </a>
         </div>

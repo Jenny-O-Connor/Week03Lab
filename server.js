@@ -10,7 +10,7 @@ import fileUpload from "express-fileupload";
 
 
 const app = express();
-const port = 3000;
+const port = 3002;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false, }));
@@ -35,7 +35,7 @@ const handlebars = create({
         return `${dateCreated.toLocaleDateString("en-IE", options)}`;
     },
     highlightPopular: (rating) => {
-        let message = rating >= 4 ? "Popular with listeners!" :  "";
+        let message = rating >= 4 ? "Fishy Favourite!" :  "";
         return message;
      },     
     },

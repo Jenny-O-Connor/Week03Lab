@@ -3,8 +3,8 @@
   <table class="ui unstackable striped table">
     <thead>
       <tr>
-        <th class="four wide">Song</th>
-        <th class="four wide">Artist</th>
+        <th class="four wide">Fact</th>
+        <th class="four wide">Source of Information</th>
         <th class="two wide"> </th>
         <th class="two wide"> </th>
       </tr>
@@ -13,8 +13,8 @@
       
       {{#each songs}}
       
-        {{> listOneSong playlistId=../id}}
-        {{> editsong playlistId=../id}}
+        {{> listOneSong creatureId=../id}}
+        {{> editsong creatureId=../id}}
 
 <script>
       document.querySelector("#showEdit{{@index}}").addEventListener ('click', () => {
@@ -34,7 +34,7 @@
 
 {{else}}
   <h3 class="ui message">
-    Empty playlist!
+    No facts yet!
   </h3>
 
 {{/if}}

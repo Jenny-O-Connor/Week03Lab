@@ -1,18 +1,18 @@
   <section class="dashboard-header">
 
-    <h2 class="title">Playlist App Dashboard</h2>
+    <h1 class="title">Sea Creature App Dashboard</h1>
 
     <form action="/searchCategory" method="GET" class="ui form">
         
       <div class="ui inline fields">
         <div class="field">
-          <input type="text" name="searchTerm" placeholder="Search by title..." value="{{search}}">
+          <input type="text" name="searchTerm" placeholder="Search by name..." value="{{search}}">
         </div>
 
         <div class="field">
           <label>Sort by:</label>
           <select class="ui dropdown" name="sort" onchange="this.form.submit()">
-            <option value="title" {{#if titleSelected}}selected{{/if}}>Title</option>
+            <option value="name" {{#if titleSelected}}selected{{/if}}>Name</option>
             <option value="rating" {{#if ratingSelected}}selected{{/if}}>Rating</option>
           </select>
         </div>

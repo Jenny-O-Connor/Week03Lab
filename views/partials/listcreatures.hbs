@@ -3,17 +3,18 @@
   {{> dashboardHeader }}
 
   {{#unless search}}
-    {{#unless playlists}}
+    {{#unless creatures}}
     <h3 class="ui message">
-      Start adding your playlists!
+      Start adding your sea creatures!
     </h3>
+    <br>
     {{/unless}}
   {{/unless}}
 
   <div class="ui centered cards">
     
-    {{#each playlists}}
-      {{> playlistCard}}
+    {{#each creatures}}
+      {{> creatureCard}}
     {{/each}}
     
   </div>

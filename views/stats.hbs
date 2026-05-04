@@ -2,53 +2,52 @@
 
 <section class="ui center aligned middle aligned segment">
 
-  <h2>Playlist App Statistics</h2>
+  <h1>Sea Creature App Statistics</h1>
 
-  <h3 class="ui header">
-    App Statistics
-  </h3>
-  <p>
-    The playlist app now contains:
-  </p>
+  <h2>App Statistics</h2>
+
+  <h2>Check out the awesome statistics from all our app users!:</h2>
+
+<br>
   {{#with stats}}
   <div class="ui center aligned grid">
 
     <div class="ui sixteen wide column">
 
       <div class="ui centered four statistics">
-        <div class="ui red statistic">
+        <div class="ui teal statistic">
           <div class="value">
-            <i class="user icon"></i>
+            <i class="users icon"></i>
           </div>
           <div class="label">
             {{displayNumUsers}} users
           </div>
         </div>
 
-        <div class="ui orange statistic">
+        <div class="ui pink statistic">
           <div class="value">
-            <i class="microphone icon"></i>
+            <i class="anchor icon"></i>
           </div>
           <div class="label">
-            {{displayNumPlaylists}} playlists
+            {{displayNumCreatures}} sea creatures
           </div>
         </div>
 
-        <div class="ui yellow statistic">
+        <div class="ui blue statistic">
           <div class="value">
-            <i class="music icon"></i>
+            <i class="tint icon"></i>
           </div>
           <div class="label">
-            {{displayNumSongs}} songs
+            {{displayNumSongs}} facts
           </div>
         </div>
 
-        <div class="ui green statistic">
+        <div class="ui teal statistic">
           <div class="value">
-            <i class="balance scale icon"></i>
+            <i class="book icon"></i>
           </div>
           <div class="label">
-            Average songs per <br> playlist: {{displayAverage}}
+            Average facts per <br> sea creature: {{displayAverage}}
           </div>
         </div>
       </div>
@@ -57,12 +56,12 @@
    <div class="ui sixteen wide column">
       <div class="ui centered three statistics">
 
-        <div class="ui blue statistic">
+        <div class="ui yellow statistic">
           <div class="value">
             <i class="star icon"></i>
           </div>
           <div class="label">
-            Highest Rated playlists: {{highest}} stars
+            Highest Rated sea creature: {{highest}} stars
             <table>
               {{#each displayFav}}
               <tr>
@@ -75,25 +74,27 @@
 
         <div class="ui purple statistic">
           <div class="value">
-            <i class="dot circle outline icon"></i>
+            <i class="heart icon"></i>
           </div>
           <div class="label">
             Average Rating: {{displayAvgRating}}
           </div>
         </div>
 		
-         <div class="ui pink statistic">
+         <div class="ui orange statistic">
           <div class="value">
-            <i class="plus icon"></i>
+            <i class="trophy icon"></i>
           </div>
           <div class="label">
-            Largest Playlist: {{displayLongest}}
+            Largest Sea Creature collection: {{displayLongest}}
           </div>
         </div>
       </div>
     </div>
     
   </div>
+  <br>
+  <br>
 
   {{/with}}
 

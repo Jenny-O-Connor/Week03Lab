@@ -1,0 +1,50 @@
+{
+  "creatureCollection": [
+    {
+      "id": "6746b8c3-8448-4f2a-86b6-6ef5d23b5183",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Great White Shark",
+      "rating": 5,
+      "songs": [
+        {
+          "id": "06842007-1659-45b7-9ba5-0e855a49f5b5",
+          "title": "Great whites have a 70+ year lifespan",
+          "artist": "Google"
+        },
+        {
+          "id": "966e6be1-c6a9-4092-be67-5f7a2d844d58",
+          "title": "Great white sharks can reach up to 6 feet in length",
+          "artist": "Google"
+        }
+      ],
+      "date": "2026-05-04T17:57:36.472Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/daihosztx/image/upload/v1777917458/ne4xjgt6dpvl7ie53ddc.jpg",
+        "public_id": "ne4xjgt6dpvl7ie53ddc"
+      }
+    },
+    {
+      "id": "b54ee4cc-4410-41d6-9bc5-7e589fce4614",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Clownfish",
+      "rating": 4,
+      "songs": [
+        {
+          "id": "8badd9d6-5a39-49b2-abe5-ce01ebfbb05a",
+          "title": "Clownfish typically live up to around 6 - 10 years",
+          "artist": "Google"
+        },
+        {
+          "id": "6b8a0f9d-52f2-4934-b162-c473513f7f9c",
+          "title": "The fish in Finding Nemo is a Clownfish",
+          "artist": "Google"
+        }
+      ],
+      "date": "2026-05-04T21:40:43.207Z",
+      "picture": {
+        "url": "http://res.cloudinary.com/daihosztx/image/upload/v1777930845/haczk8gyuw4fgeoch0on.jpg",
+        "public_id": "haczk8gyuw4fgeoch0on"
+      }
+    }
+  ]
+}
